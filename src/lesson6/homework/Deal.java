@@ -42,4 +42,17 @@ public class Deal {
         return type == "Buy" || type == "Sale";
     }
 
+    @Override
+    public String toString() {
+        return "Deal{" +
+                "id=" + id +
+                ", price=" + price +
+                ", dataCreated=" + dataCreated +
+                ", isConfirmed=" + isConfirmed +
+                ", dateConfirmed=" + dateConfirmed +
+                ", city='" + city + '\'' +
+                ", country='" + country + '\'' +
+                ", type='" + type + '\'' +
+                '}';
+    }
 }
